@@ -49,9 +49,9 @@ const Home = () => {
     }
 
     return (
-        <div className="flex gap-4">
+        <div className="flex gap-4 mx-auto container">
             <div className="w-2/3">
-                <div className="grid grid-cols-3 gap-10 ">
+                <div className="grid grid-cols-3 gap-2 ">
                     {card.map(item=>(
                        <div key={item.id} className="space-y-3 shadow-lg rounded-md p-3">
                          <img className="p-3" src={item.image} alt="" />
@@ -62,7 +62,7 @@ const Home = () => {
                             <div className='flex items-center gap-2'><p><BsBook></BsBook></p>
                             <p>credit:{item.credit}hr</p></div>
                         </div>
-                        <button onClick={()=>handalClick(item)} className='w-full bg-sky-700 p-2 text-white inset-x-0 bottom-0 rounded-md'>Select</button>
+                        <button onClick={()=>handalClick(item)} className='card-containaer w-full bg-sky-700 p-2 text-white inset-x-0 bottom-0 rounded-md'>Select</button>
                        </div>
                     ))}
                 </div>

@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Database (MySQL)",
+        "name": "Introduction Database (MySQL)",
         "des": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
         
         "image": "https://i.ibb.co/CPw2jbT/Rectangle-2-1.png",
@@ -48,7 +48,7 @@
     },
     {
         "id": 6,
-        "name": "Software Engineering",
+        "name": "Introduction Software Engineering",
         "des": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
         
         "image": "https://i.ibb.co/2s3K3cq/Rectangle-2-5.png",
@@ -57,7 +57,7 @@
     },
     {
         "id": 7,
-        "name": "Problem-Solving Part",
+        "name": "Introduction Problem-Solving Part",
         "des": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
         
         "image": "https://i.ibb.co/DG35JXS/Rectangle-2-6.png",
