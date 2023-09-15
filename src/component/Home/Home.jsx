@@ -49,7 +49,7 @@ const Home = () => {
     }
 
     return (
-        <div className="flex">
+        <div className="flex gap-4">
             <div className="w-2/3">
                 <div className="grid grid-cols-3 gap-10 ">
                     {card.map(item=>(

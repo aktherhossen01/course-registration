@@ -3,18 +3,25 @@
 
 
 const Card = ({bookmark,credit,remaining}) => {
+    let count = 1
     console.log(bookmark);
     return (
-        <div>
-            <h1>Remaining: {remaining}</h1>
-           <div>
+        <div className="shadow-lg p-4 text-left border-2 w-72">
+            <h1 className="mb-2 text-2xl font-bold">Remaining: {remaining}</h1>
+           <div className="bg-[#FFF] mb-3"> <hr />
+           <h1 className="text-2xl font-semibold mb-4">Course Name</h1>
+            
            {bookmark.map(book=>(
                 <div>
-                    <h1>{book.name}</h1>
+                    <ol>
+                        <li className="font-semibold">{count++}. {book.name}</li>
+                    </ol>
+                    {/* <h1>{book.name}</h1> */}
                 </div>
             ))}
            </div>
-           <h1>Creadit: {credit}</h1>
+           <hr />
+           <h1 className="font-medium mt-4">Total  Credit Hour: {credit}</h1>
         </div>
     );
 };
