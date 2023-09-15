@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-key */
-import { BsBook } from 'react-icons/bs';
+import { BsBook  } from 'react-icons/bs';
+import { FiDollarSign } from 'react-icons/fi';
 import { useEffect } from "react";
 import { useState } from "react";
 import Card from '../Card/Card';
@@ -21,7 +22,7 @@ const Home = () => {
         const isExist = bookmark.find(fid=>fid.id === itemCard.id)
         let count = itemCard.credit
         if(isExist){
-            alert('already exist')
+            alert('this item already exist')
         }else{
 
 
@@ -30,7 +31,7 @@ const Home = () => {
             }))
 
             if(count >20){
-                alert('20 ai upor jaite parba na')
+                alert('credit complete 20')
             }else{
 
                 setCredit(count);
@@ -38,7 +39,7 @@ const Home = () => {
 
             const totalRemaining = 20 - count
             if(totalRemaining <0){
-                alert('negetive no alow')
+                alert('Negative not allowed')
             }else{
 
                 setRemaining(totalRemaining);
@@ -57,10 +58,13 @@ const Home = () => {
                          <img className="p-3" src={item.image} alt="" />
                         <h1 className="text-2xl font-semibold">{item.name}</h1>
                         <p>{item.des}</p>
-                        <div className="flex gap-6">
-                            <p>price:{item.price}</p>
+                        <div className="flex items-center gap-6">
+                           <div className='flex items-center'>
+                           <p><FiDollarSign></FiDollarSign></p>
+                            <p>Price: {item.price}</p>
+                           </div>
                             <div className='flex items-center gap-2'><p><BsBook></BsBook></p>
-                            <p>credit:{item.credit}hr</p></div>
+                            <p>Credit: {item.credit}hr</p></div>
                         </div>
                         <button onClick={()=>handalClick(item)} className='card-containaer w-full bg-sky-700 p-2 text-white inset-x-0 bottom-0 rounded-md'>Select</button>
                        </div>
